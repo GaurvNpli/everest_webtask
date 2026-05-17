@@ -1,0 +1,108 @@
+.calc-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.calculator {
+  width: 320px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* the screen at the top */
+.calc-display {
+  padding: 24px 20px 16px;
+  text-align: right;
+  background: white;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.calc-expression {
+  font-size: 13px;
+  color: #94a3b8;
+  min-height: 20px;
+  margin-bottom: 4px;
+}
+
+.calc-number {
+  font-size: 36px;
+  font-weight: 300;
+  color: #0f172a;
+  letter-spacing: -1px;
+  /* shrinks text if number gets too long */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calc-buttons {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calc-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* base button style */
+.btn {
+  flex: 1;
+  height: 64px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  background: #f8fafc;
+  color: #0f172a;
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #f1f5f9;
+}
+
+/* C, +/-, % buttons */
+.btn-function {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 15px;
+}
+
+.btn-function:hover {
+  background: #e2e8f0;
+}
+
+/* operator buttons ÷ × - + */
+.btn-operator {
+  background: #f8fafc;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.btn-operator:hover {
+  background: #eff6ff;
+}
+
+/* equals button */
+.btn-equals {
+  background: #0f172a;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-equals:hover {
+  background: #1e293b;
+}
+
+/* zero button takes up 2 slots */
+.btn-zero {
+  flex: 2;
+}

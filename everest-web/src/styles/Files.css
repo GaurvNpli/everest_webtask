@@ -1,0 +1,77 @@
+.files-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.files-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 40px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.files-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.files-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* hides the default file input and replaces with custom label */
+.files-input {
+  display: none;
+}
+
+.files-input-label {
+  display: block;
+  padding: 10px 16px;
+  border: 1px dashed #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #64748b;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.files-input-label:hover {
+  border-color: #0f172a;
+  color: #0f172a;
+}
+
+.files-btn {
+  padding: 10px 24px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.files-btn:hover {
+  background: #1e293b;
+}
+
+.files-status {
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}

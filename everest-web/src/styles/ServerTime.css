@@ -1,0 +1,67 @@
+.servertime-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.servertime-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.servertime-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.servertime-time {
+  font-size: 48px;
+  font-weight: 300;
+  color: #0f172a;
+  letter-spacing: -2px;
+}
+
+.servertime-date {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.servertime-status {
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+.servertime-error {
+  font-size: 14px;
+  color: #ef4444;
+}
+
+.servertime-btn {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.servertime-btn:hover {
+  background: #1e293b;
+}
