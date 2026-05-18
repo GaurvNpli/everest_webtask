@@ -23,7 +23,7 @@ Add a `.env` file with your MySQL credentials:
 PORT=3000
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=your_password
+DB_PASSWORD=password
 DB_NAME=everest
 ```
 
