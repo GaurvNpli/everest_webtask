@@ -6,7 +6,7 @@ Full stack project built for the Everest team assessment. Node.js backend, React
 
 | Folder | Stack |
 |--------|-------|
-| `everest-assessment` | Node.js + Express + MySQL |
+| `everest-server` | Node.js + Express + MySQL |
 | `everest-web` | React + Vite |
 | `everest-mobile` | Expo + React Native |
 
