@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     paddingVertical: 10,
     paddingHorizontal: 20,
-    marginBottom: 24,
+    marginBottom: 25,
     alignSelf: 'flex-start',
   },
   selectedText: {

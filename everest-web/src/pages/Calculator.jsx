@@ -2,7 +2,6 @@ import { useState } from 'react'
 import '../styles/Calculator.css'
 
 function Calculator() {
-  // display is what shows on screen
   const [display, setDisplay] = useState('0')
   const [expression, setExpression] = useState('')
   const [justCalculated, setJustCalculated] = useState(false)
