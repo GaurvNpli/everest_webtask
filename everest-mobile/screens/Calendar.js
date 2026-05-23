@@ -242,4 +242,4 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: '600',
   },
-})
+}) 

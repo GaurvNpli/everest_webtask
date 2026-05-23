@@ -173,4 +173,4 @@ const styles = StyleSheet.create({
   btnZero: {
     flex: 2,
   },
-})
+}) 

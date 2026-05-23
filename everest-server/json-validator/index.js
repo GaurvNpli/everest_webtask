@@ -27,4 +27,4 @@ try {
 } catch (err) {
   console.log(`✗ ${fileName} is not valid JSON`)
   console.log(`  Error: ${err.message}`)
-}
+} 
