@@ -10,8 +10,8 @@ export default function Home({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>everest.</Text>
-      <Text style={styles.tagline}>your pocket toolkit</Text>
+      <Text style={styles.logo}>Everest.</Text>
+      <Text style={styles.tagline}>Assignment By Gaurav Nepali</Text>
 
       <View style={styles.cards}>
         {features.map((item) => (
