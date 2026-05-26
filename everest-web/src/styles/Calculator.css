@@ -12,7 +12,6 @@
   overflow: hidden;
 }
 
-/* the screen at the top */
 .calc-display {
   padding: 24px 20px 16px;
   text-align: right;
@@ -32,7 +31,6 @@
   font-weight: 300;
   color: #0f172a;
   letter-spacing: -1px;
-  /* shrinks text if number gets too long */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -50,7 +48,6 @@
   gap: 8px;
 }
 
-/* base button style */
 .btn {
   flex: 1;
   height: 64px;
@@ -69,7 +66,6 @@
   background: #f1f5f9;
 }
 
-/* C, +/-, % buttons */
 .btn-function {
   background: #f1f5f9;
   color: #475569;
@@ -80,7 +76,6 @@
   background: #e2e8f0;
 }
 
-/* operator buttons ÷ × - + */
 .btn-operator {
   background: #f8fafc;
   color: #2563eb;
@@ -91,7 +86,6 @@
   background: #eff6ff;
 }
 
-/* equals button */
 .btn-equals {
   background: #0f172a;
   color: white;
@@ -102,7 +96,6 @@
   background: #1e293b;
 }
 
-/* zero button takes up 2 slots */
 .btn-zero {
   flex: 2;
 } 

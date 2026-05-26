@@ -73,12 +73,10 @@ export default function Calendar() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
 
-      {/* page title */}
       <Text style={styles.pageTitle}>Calendar</Text>
 
       <View style={styles.calendar}>
 
-        {/* year navigation */}
         <View style={styles.yearRow}>
           <TouchableOpacity onPress={() => setYear(y => y - 1)} style={styles.navBtn}>
             <Text style={styles.navBtnText}>‹</Text>
@@ -89,7 +87,6 @@ export default function Calendar() {
           </TouchableOpacity>
         </View>
 
-        {/* month navigation */}
         <View style={styles.monthRow}>
           <TouchableOpacity onPress={prevMonth} style={styles.navBtn}>
             <Text style={styles.navBtnText}>‹</Text>
@@ -100,17 +97,14 @@ export default function Calendar() {
           </TouchableOpacity>
         </View>
 
-        {/* divider */}
         <View style={styles.divider} />
 
-        {/* day labels */}
         <View style={styles.dayLabels}>
           {DAYS.map(d => (
             <Text key={d} style={styles.dayLabel}>{d}</Text>
           ))}
         </View>
 
-        {/* grid */}
         <View style={styles.grid}>
           {buildDays()}
         </View>

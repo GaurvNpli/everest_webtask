@@ -30,7 +30,6 @@
   margin-bottom: 8px;
 }
 
-/* hides the default file input and replaces with custom label */
 .files-input {
   display: none;
 }

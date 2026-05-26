@@ -15,7 +15,6 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           headerShown: false,
-          // this function returns the right icon for each tab
           tabBarIcon: ({ color, size }) => {
             let iconName
 
