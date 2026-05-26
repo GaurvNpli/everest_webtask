@@ -3,7 +3,7 @@ const path = require('path')
 const https = require('https')
 const geoip = require('fast-geoip')
 
-// download the log file from the url they gave us
+// download the log file  
 function downloadLog(url, dest) {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(dest)
@@ -36,12 +36,12 @@ async function main() {
 
   const regionCount = {}
 
-// look up each IP - we do them one at a time to not overload
+// IP
   for (const ip of ips) {
     try {
       const geo = await geoip.lookup(ip)
       if (geo) {
-        // use full country name if available
+        // countryname
         const country = geo.country || 'Unknown'
         const region = geo.region && geo.region !== geo.country 
           ? geo.region 
@@ -57,7 +57,7 @@ async function main() {
     }
   }
 
-  // sort by count - highest first
+  // sorting
   const sorted = Object.entries(regionCount)
     .sort((a, b) => b[1] - a[1])
 

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import '../styles/Files.css'
 
 function Files() {
-  // for upload status message
   const [uploadStatus, setUploadStatus] = useState(null)
   const [selectedFile, setSelectedFile] = useState(null)
 
@@ -11,7 +10,6 @@ function Files() {
   }
 
   function handleDownload() {
-    // fetch the file from our backend
     fetch('http://localhost:3000/file')
       .then((res) => res.blob()) 
       .then((blob) => {

@@ -4,7 +4,7 @@ import '../styles/Calendar.css'
 function Calendar() {
   const today = new Date()
   const [year, setYear] = useState(today.getFullYear())
-  const [month, setMonth] = useState(today.getMonth()) // 0 = January, 11 = December
+  const [month, setMonth] = useState(today.getMonth())
   const [selectedDate, setSelectedDate] = useState(null)
 
   const months = [

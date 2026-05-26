@@ -9,7 +9,7 @@ import Users from './pages/Users'
 
 function App() {
   return (
-    //  enables routing in our app
+    // routing 
     <BrowserRouter>
       <div className="container">
 
@@ -25,6 +25,7 @@ function App() {
         </nav>
 
         <main className="main">
+          <h1>Hello World</h1>
           <Routes>
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/calculator" element={<Calculator />} />

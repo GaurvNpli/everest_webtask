@@ -12,7 +12,6 @@ function Calculator() {
       setJustCalculated(false)
       return
     }
-    // replace 0 with the number
     if (display === '0') {
       setDisplay(String(num))
     } else {
@@ -33,7 +32,6 @@ function Calculator() {
 
   function handleEquals() {
     if (!expression) return
-    // grab the number before the operator and the operator itself
     const parts = expression.split(' ')
     const prev = parseFloat(parts[0])
     const op = parts[1]

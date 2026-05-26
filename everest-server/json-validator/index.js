@@ -9,16 +9,14 @@ if (!fileName) {
   process.exit(1)
 }
 
-// build the full path to the file
+// building path
 const filePath = path.join(__dirname, fileName)
 
-// check if the file actually exists
 if (!fs.existsSync(filePath)) {
   console.log(`File not found: ${fileName}`)
   process.exit(1)
 }
 
-// read the file contents
 const fileContents = fs.readFileSync(filePath, 'utf8')
 
 try {

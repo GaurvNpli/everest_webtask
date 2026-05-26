@@ -71,7 +71,6 @@ export default function Calculator() {
 
   return (
     <View style={styles.container}>
-      {/* display */}
       <View style={styles.display}>
         <Text style={styles.expression}>{expression}</Text>
         <Text style={styles.number} numberOfLines={1} adjustsFontSizeToFit>
@@ -79,7 +78,6 @@ export default function Calculator() {
         </Text>
       </View>
 
-      {/* buttons */}
       <View style={styles.buttons}>
         {BUTTONS.map((row, i) => (
           <View key={i} style={styles.row}>

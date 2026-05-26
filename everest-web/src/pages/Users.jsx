@@ -36,7 +36,6 @@ function Users() {
         setStatus(data.message)
         setName('')
         setEmail('')
-        // refresh the users list
         fetchUsers()
       })
       .catch(() => setStatus('Could not add user'))

@@ -40,12 +40,12 @@ if (files.length === 0) {
 console.log(`Converting ${files.length} file(s) from ${mode === 's2t' ? 'Simplified → Traditional' : 'Traditional → Simplified'}`)
 console.log('---')
 
-// convert each file
+// convertfile
 files.forEach(file => {
   const filePath = path.join(folderPath, file)
   const content = fs.readFileSync(filePath, 'utf8')
 
-  // convert the text
+  // convert text
   const converted = converter(content)
 
   fs.writeFileSync(filePath, converted, 'utf8')
